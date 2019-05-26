@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: ru.tinkoff.decoro:decoro:1.3.4@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a804614956796cef019e5fee21b6a492/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a804614956796cef019e5fee21b6a492/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/ru.tinkoff.decoro/decoro/1.3.4/820fe9b8065be21dd8033d062d2f429c8ec644ce/decoro-1.3.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

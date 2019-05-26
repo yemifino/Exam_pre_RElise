@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/card_view"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        card_view:cardCornerRadius="4dp"
+        android:layout_margin="8dp">
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+     >
+
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="179dp"
+            android:layout_height="31dp"
+            android:layout_margin="8dp"
+            android:fontFamily="@font/courier"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            card_view:layout_constraintBottom_toTopOf="@id/cost"
+            card_view:layout_constraintLeft_toLeftOf="parent"
+            card_view:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/cost"
+            android:layout_width="179dp"
+            android:layout_height="31dp"
+            android:layout_margin="8dp"
+            android:fontFamily="@font/courier"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            card_view:layout_constraintLeft_toLeftOf="parent"
+            card_view:layout_constraintTop_toBottomOf="@id/name" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="179dp"
+            android:layout_height="31dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:textAlignment="center"
+            android:text="-"
+            android:fontFamily="@font/courier"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintStart_toEndOf="@+id/name"
+            card_view:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="179dp"
+            android:layout_height="31dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="-"
+            android:textAlignment="center"
+            android:fontFamily="@font/courier"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintStart_toEndOf="@+id/cost"
+            card_view:layout_constraintTop_toBottomOf="@+id/textView2"
+            tools:ignore="MissingConstraints" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    </android.support.v7.widget.CardView>   

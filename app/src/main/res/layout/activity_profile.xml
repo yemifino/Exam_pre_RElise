@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ProfileActivity">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:id="@+id/logo"
+        android:background="@drawable/logo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/biil_list"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="10dp"/>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="173dp"
+        android:layout_height="64dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:onClick="buy"
+        android:text="Оплатить"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/biil_list" />
+
+    <TextView
+        android:id="@+id/textlogin"
+        android:layout_width="130dp"
+        android:layout_height="31dp"
+        android:gravity="center"
+        android:onClick="exit"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@id/biil_list"
+        app:layout_constraintHorizontal_bias="0.941"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="@color/black"
+        android:fontFamily="@font/courier"
+        android:textStyle="bold"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/biil_list"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logo"
+        app:layout_constraintBottom_toTopOf="@id/button1"/>
+
+</android.support.constraint.ConstraintLayout>
